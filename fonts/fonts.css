@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Monument Extended';
+    src: url('MonumentExtended-Ultrabold.woff2') format('woff2'),
+        url('MonumentExtended-Ultrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
