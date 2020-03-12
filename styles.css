@@ -65,6 +65,21 @@ body {
 	left: 45px;
 }
 
+.year {
+	display: block;
+	position: fixed;
+	font-size: 3em;
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	font-weight: 800;
+	font-style: normal;
+	bottom: 100px;
+	left: 180px;
+}
+
 .info-container {
 	width: calc(70%- 100px);
 	margin-left: 30%;
@@ -138,6 +153,7 @@ body {
 	width: 100%;
 	height: 100%;
 	display: flex;
+	padding: 0 20px;
 	align-items: center;
 	justify-content: space-around;
 	opacity: 0;
@@ -145,12 +161,11 @@ body {
 }
 
 .profile {
-	width: calc(30% - 40px);
+	width: calc(35% - 40px);
 	height: calc(70% - 100px);
 	background: #303030;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	flex-direction: column;
 	position: relative;
 	padding: 50px 20px;
@@ -166,6 +181,7 @@ body {
 .profile p {
 	margin-top: 10px;
 	font-size: 0.7em;
+	font-weight: 100;
 }
 
 .profile button {
@@ -174,5 +190,28 @@ body {
 	border-bottom: 2px solid white;
 	outline: none;
 	cursor: pointer;
+	position: absolute;
+	bottom: 10%;
 	margin-top: 30px;
+}
+
+.arrow {
+	background: transparent;
+	border: none;
+	height: 40px;
+	width: 40px;
+	font-size: 2em;
+	outline: none;
+	cursor: pointer;
+	margin: 0 0px;
+}
+
+.mySlides {
+	display: none;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: space-around;
+	opacity: 0;
+	transition: 0.2s;
 }

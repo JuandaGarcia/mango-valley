@@ -12,6 +12,7 @@
 	<body>
 		<span class="effect mango">Mango</span>
 		<span class="effect valley">Valley</span>
+		<span class="year">2020</span>
 		<div class="info-container">
 			<h1 class="noSelect">Mango<br />Valley</h1>
 			<div id="team" class="accordion team">
@@ -21,20 +22,59 @@
 			</div>
 			<div class="list">
 				<div class="contenido-conatiner">
-					<div class="profile">
-						<img src="./img/1.jpg" alt="foto de perfil" />
-						<span>Danna García</span>
-						<p></p>
-						<button>Más detalles...</button>
+					<button class="arrow" onclick="plusDivs(-1)">←</button>
+					<div class="mySlides">
+						<div class="profile">
+							<img src="./img/1.jpg" alt="foto de perfil" />
+							<span>Danna García</span>
+							<p>
+								UI/UX designer con 7 años de experiencia en el mercado. Es muy
+								buena usando Figma y Adobe XD.
+							</p>
+							<button>Más detalles...</button>
+						</div>
+						<div class="profile">
+							<img src="./img/2.jpg" alt="foto de perfil" />
+							<span>Juan García</span>
+							<p>
+								Frontend Developer con gran pasión por el diseño y desarrollo
+								web. Sus fuertes son React, Angular y Vue.
+							</p>
+							<button>Más detalles...</button>
+						</div>
 					</div>
-					<div class="profile">
-						<img src="./img/2.jpg" alt="foto de perfil" />
-						<span>Sacha Lifszyc</span>
-						<p>
-							Frontend Developer con gran pasión por el diseño y desarrollo web.
-						</p>
-						<button>Más detalles...</button>
+					<div class="mySlides">
+						<div class="profile">
+							<img src="./img/3.jpg" alt="foto de perfil" />
+							<span>Sofia Collazos</span>
+							<p>
+								Diseñadora y administradora de bases de datos. Maneja MySQL,
+								MongoDB y PostgreSQL.
+							</p>
+							<button>Más detalles...</button>
+						</div>
+						<div class="profile">
+							<img src="./img/4.jpg" alt="foto de perfil" />
+							<span>David Rincón</span>
+							<p>
+								Backend Developer con gran 5 años de experiencia trabajando con
+								tecnologias como NodeJS y python
+							</p>
+							<button>Más detalles...</button>
+						</div>
 					</div>
+					<div class="mySlides">
+						<div class="profile">
+							<img src="./img/5.jpg" alt="foto de perfil" />
+							<span>Kevin Castro</span>
+							<p>
+								Devops engineer con 3 años de experiencia adminstrando
+								infraestructuras de TI.
+							</p>
+							<button>Más detalles...</button>
+						</div>
+					</div>
+					<button class="arrow" onclick="plusDivs(1)">→</button>
 				</div>
 			</div>
 			<div class="accordion projects">
