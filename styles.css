@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Monument Extended';
+	color: white;
 }
 
 *::selection {
@@ -22,6 +23,16 @@
 ::-webkit-scrollbar-thumb {
 	background: rgba(255, 255, 255, 0.3);
 	border-radius: 5px;
+}
+
+.noSelect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -78,13 +89,15 @@ body {
 	justify-content: space-between;
 	cursor: pointer;
 	position: relative;
+	z-index: 1;
 }
 
 .accordion span {
 	color: white;
 	font-size: 2em;
+	font-weight: bold;
 	margin: 0 40px;
-	z-index: 1;
+	z-index: 2;
 }
 
 .color-overlay {
@@ -119,4 +132,47 @@ body {
 	justify-content: space-between;
 	position: relative;
 	transition: 0.2s;
+}
+
+.contenido-conatiner {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	opacity: 0;
+	transition: 0.2s;
+}
+
+.profile {
+	width: calc(30% - 40px);
+	height: calc(70% - 100px);
+	background: #303030;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	position: relative;
+	padding: 50px 20px;
+}
+
+.profile img {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: -15%;
+}
+
+.profile p {
+	margin-top: 10px;
+	font-size: 0.7em;
+}
+
+.profile button {
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+	outline: none;
+	cursor: pointer;
+	margin-top: 30px;
 }
