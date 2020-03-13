@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mango Valley</title>
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="1192805467.css" />
 		<link rel="icon" href="./img/icon.png" />
 		<link rel="stylesheet" href="./fonts/fonts.css" />
 		<link rel="stylesheet" href="./fonts/stylesheet.css" />
@@ -31,7 +31,7 @@
 								UI/UX designer con 7 años de experiencia en el mercado. Es muy
 								buena usando Figma y Adobe XD.
 							</p>
-							<button>Más detalles...</button>
+							<button onclick="modal(0)">Más detalles...</button>
 						</div>
 						<div class="profile">
 							<img src="./img/2.jpg" alt="foto de perfil" />
@@ -40,7 +40,7 @@
 								Frontend Developer con gran pasión por el diseño y desarrollo
 								web. Sus fuertes son React, Angular y Vue.
 							</p>
-							<button>Más detalles...</button>
+							<button onclick="modal(1)">Más detalles...</button>
 						</div>
 					</div>
 					<div class="mySlides">
@@ -51,7 +51,7 @@
 								Diseñadora y administradora de bases de datos. Maneja MySQL,
 								MongoDB y PostgreSQL.
 							</p>
-							<button>Más detalles...</button>
+							<button onclick="modal(2)">Más detalles...</button>
 						</div>
 						<div class="profile">
 							<img src="./img/4.jpg" alt="foto de perfil" />
@@ -60,10 +60,54 @@
 								Backend Developer con gran 5 años de experiencia trabajando con
 								tecnologias como NodeJS y python
 							</p>
-							<button>Más detalles...</button>
+							<button onclick="modal(3)">Más detalles...</button>
 						</div>
 					</div>
 					<div class="mySlides">
+						<div class="profile">
+							<img src="./img/5.jpg" alt="foto de perfil" />
+							<span>Kevin Castro</span>
+							<p>
+								Devops engineer con 3 años de experiencia adminstrando
+								infraestructuras de TI.
+							</p>
+							<button onclick="modal(4)">Más detalles...</button>
+						</div>
+					</div>
+					<button class="arrow" onclick="plusDivs(1)">→</button>
+				</div>
+			</div>
+			<div class="accordion projects">
+				<span class="noSelect">Proyectos actuales</span>
+				<span class="noSelect">+</span>
+				<div class="color-overlay"></div>
+			</div>
+			<div class="list">
+				<div class="contenido-conatiner">
+					<button class="arrow" onclick="plusDivs(-1)">←</button>
+					<div class="mySlidesProjects">
+						<div class="profile">
+							<img src="./img/1.jpg" alt="foto de perfil" />
+							<span>Danna García</span>
+							<p>
+								UI/UX designer con 7 años de experiencia en el mercado. Es muy
+								buena usando Figma y Adobe XD.
+							</p>
+							<button>Más detalles...</button>
+						</div>
+					</div>
+					<div class="mySlidesProjects">
+						<div class="profile">
+							<img src="./img/3.jpg" alt="foto de perfil" />
+							<span>Sofia Collazos</span>
+							<p>
+								Diseñadora y administradora de bases de datos. Maneja MySQL,
+								MongoDB y PostgreSQL.
+							</p>
+							<button>Más detalles...</button>
+						</div>
+					</div>
+					<div class="mySlidesProjects">
 						<div class="profile">
 							<img src="./img/5.jpg" alt="foto de perfil" />
 							<span>Kevin Castro</span>
@@ -77,12 +121,28 @@
 					<button class="arrow" onclick="plusDivs(1)">→</button>
 				</div>
 			</div>
-			<div class="accordion projects">
-				<span class="noSelect">Proyectos actuales</span>
-				<span class="noSelect">+</span>
-				<div class="color-overlay"></div>
+		</div>
+		<div id="modal-back" class="modal-back">
+			<div id="modal-back-tranparent" class="modal-back-tranparent"></div>
+			<div id="modal" class="modal">
+				<div class="contenido-modal">
+					<span onclick="cerrarModal()" class="close">X</span>
+					<div class="img-modal">
+						<img id="profile_img" src="" alt="" />
+					</div>
+					<div class="texto-modal">
+						<h2 id="nombre"></h2>
+						<span id="profesion"></span>
+						<hr />
+						<br />
+						<span class="title-modal">historial académico</span><br />
+						<span id="academico"></span><br />
+						<br />
+						<span class="title-modal">historial laboral</span><br />
+						<span id="laboral"></span>
+					</div>
+				</div>
 			</div>
-			<div class="list"></div>
 		</div>
 		<script src="index.js"></script>
 	</body>

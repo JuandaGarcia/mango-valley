@@ -104,7 +104,7 @@ body {
 	justify-content: space-between;
 	cursor: pointer;
 	position: relative;
-	z-index: 1;
+	z-index: 5;
 }
 
 .accordion span {
@@ -112,7 +112,7 @@ body {
 	font-size: 2em;
 	font-weight: bold;
 	margin: 0 40px;
-	z-index: 2;
+	z-index: 6;
 }
 
 .color-overlay {
@@ -147,6 +147,7 @@ body {
 	justify-content: space-between;
 	position: relative;
 	transition: 0.2s;
+	z-index: 5;
 }
 
 .contenido-conatiner {
@@ -158,6 +159,7 @@ body {
 	justify-content: space-around;
 	opacity: 0;
 	transition: 0.2s;
+	z-index: 4;
 }
 
 .profile {
@@ -169,6 +171,7 @@ body {
 	flex-direction: column;
 	position: relative;
 	padding: 50px 20px;
+	z-index: 4;
 }
 
 .profile img {
@@ -212,6 +215,71 @@ body {
 	height: 100%;
 	align-items: center;
 	justify-content: space-around;
+	z-index: 4;
+}
+
+.modal-back {
+	background: rgba(0, 0, 0, 0.5);
+	-webkit-backdrop-filter: saturate(180%) blur(5px);
+	backdrop-filter: saturate(180%) blur(5px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	opacity: 0;
-	transition: 0.2s;
+	z-index: 4;
+	transition: 0.5s;
+}
+.modal-back-tranparent {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+}
+
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	height: 50%;
+	transform: translate(-50%, -50%);
+	background: #131313;
+	z-index: 4;
+	transition: 0.5s;
+}
+
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	font-size: 1.5em;
+	margin: 20px;
+}
+
+.contenido-modal {
+	width: calc(100% - 80px);
+	height: calc(100% - 80px);
+	position: relative;
+	display: flex;
+	padding: 40px;
+	align-items: center;
+}
+
+.img-modal img {
+	width: 200px;
+	height: 200px;
+}
+
+.texto-modal {
+	height: 200px;
+	padding-left: 40px;
+}
+
+.title-modal {
+	color: #424242;
 }
