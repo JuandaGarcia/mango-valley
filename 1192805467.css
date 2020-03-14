@@ -171,7 +171,7 @@ body {
 	flex-direction: column;
 	position: relative;
 	padding: 50px 20px;
-	z-index: 4;
+	z-index: 0;
 }
 
 .profile img {
@@ -215,7 +215,17 @@ body {
 	height: 100%;
 	align-items: center;
 	justify-content: space-around;
-	z-index: 4;
+	position: relative;
+	z-index: 0;
+}
+.mySlidesProjects {
+	display: none;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	position: relative;
+	justify-content: space-around;
+	z-index: 0;
 }
 
 .modal-back {
@@ -282,4 +292,21 @@ body {
 
 .title-modal {
 	color: #424242;
+}
+
+.project {
+	height: calc(80% - 40px);
+	width: calc(85% - 40px);
+	background: #303030;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.project img {
+	width: 40%;
+}
+
+.contenido-project {
+	margin-left: 15px;
 }
