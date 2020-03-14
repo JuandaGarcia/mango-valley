@@ -110,10 +110,10 @@ const laboral = document.getElementById('laboral')
 const profile_img = document.getElementById('profile_img')
 
 function modal(persona) {
-	modal_person.style.zIndex = '15'
+	modal_person.style.zIndex = '150'
 	back_modal.style.opacity = '1'
-	back_modal.style.zIndex = '10'
-	back_modal_transparent.style.zIndex = '12'
+	back_modal.style.zIndex = '140'
+	back_modal_transparent.style.zIndex = '120'
 
 	nombre.innerText = Personas[persona].nombre
 	profesion.innerText = Personas[persona].profesion

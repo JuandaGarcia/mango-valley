@@ -104,7 +104,7 @@ body {
 	justify-content: space-between;
 	cursor: pointer;
 	position: relative;
-	z-index: 5;
+	z-index: 30;
 }
 
 .accordion span {
